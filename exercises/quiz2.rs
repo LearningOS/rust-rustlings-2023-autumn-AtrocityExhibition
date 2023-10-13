@@ -30,12 +30,9 @@ pub enum Command {
 mod my_module {
     use super::Command;
 
-    // TODO: Complete the function signature!
     pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
-        // TODO: Complete the output declaration!
         let mut output: Vec<String> = vec![];
         for (s, command) in input.iter() {
-            // TODO: Complete the function body. You can do it!
             let newstr = match command {
                 Command::Uppercase => s.to_uppercase(),
                 Command::Trim => s.to_string().trim().to_string(),
