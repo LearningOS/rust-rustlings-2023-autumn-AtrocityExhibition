@@ -5,15 +5,16 @@
 // Execute `rustlings hint macros3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 mod macros {
+    #[macro_export]
+    //a macro annotated with #[macro_export] will be exported at the root of the crate 
     macro_rules! my_macro {
         () => {
             println!("Check out my macro!");
         };
     }
 }
+
 
 fn main() {
     my_macro!();
